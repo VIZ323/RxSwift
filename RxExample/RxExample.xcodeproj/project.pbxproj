@@ -16,6 +16,9 @@
 		252C9F7A1F14115B00F5F951 /* SimpleUIPickerViewExample.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 252C9F791F14115B00F5F951 /* SimpleUIPickerViewExample.storyboard */; };
 		2864D5F21D995FCD004F8484 /* Application+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2864D5F11D995FCD004F8484 /* Application+Extensions.swift */; };
 		2864D5F31D995FCD004F8484 /* Application+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2864D5F11D995FCD004F8484 /* Application+Extensions.swift */; };
+		2EC36364253163330074B2CB /* RxCocoa.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C81B3A091BC1C28400EF5A9F /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2EC36365253163960074B2CB /* RxSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C81B3A011BC1C28400EF5A9F /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2EC36366253163DD0074B2CB /* RxRelay.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 787BBB6B226B2A6100279500 /* RxRelay.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8479BC721C3BDAD400FB8B54 /* ImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8479BC701C3BCB9800FB8B54 /* ImagePickerController.swift */; };
 		927A78B82117A5E700A45638 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BCD3DE1C1480E9005F1280 /* Operators.swift */; };
 		A5CD038F1F1670E50005A376 /* CustomPickerViewAdapterExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CD038E1F1670E50005A376 /* CustomPickerViewAdapterExampleViewController.swift */; };
@@ -163,7 +166,7 @@
 		C8DF92EB1B0B38C0009BCF9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8DF92E91B0B38C0009BCF9A /* Images.xcassets */; };
 		C8E9D2AF1BD3FD960079D0DB /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80397391BD3E17D009D8B26 /* ActivityIndicator.swift */; };
 		C8F8C48A1C277F460047640B /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F8C4891C277F460047640B /* Calculator.swift */; };
-		EF8128F1226BD61900AE22C2 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C81B3A091BC1C28400EF5A9F /* RxCocoa.framework */; };
+		EF8128F1226BD61900AE22C2 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C81B3A091BC1C28400EF5A9F /* RxCocoa.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		EF8128F2226BD61900AE22C2 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C81B3A011BC1C28400EF5A9F /* RxSwift.framework */; };
 		EF8128F5226BD97900AE22C2 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C81B3A011BC1C28400EF5A9F /* RxSwift.framework */; };
 		EF8128F6226BD9E700AE22C2 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C81B3A091BC1C28400EF5A9F /* RxCocoa.framework */; };
@@ -290,6 +293,21 @@
 			remoteInfo = "RxTest-iOS";
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2EC36363253163180074B2CB /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2EC36366253163DD0074B2CB /* RxRelay.framework in CopyFiles */,
+				2EC36365253163960074B2CB /* RxSwift.framework in CopyFiles */,
+				2EC36364253163330074B2CB /* RxCocoa.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0744CDD31C4DB5F000720FD2 /* GeolocationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeolocationService.swift; sourceTree = "<group>"; };
@@ -977,6 +995,7 @@
 				C83366D91AD0293800C668A7 /* Sources */,
 				C83366DA1AD0293800C668A7 /* Frameworks */,
 				C83366DB1AD0293800C668A7 /* Resources */,
+				2EC36363253163180074B2CB /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -1062,7 +1081,7 @@
 					};
 					C83366DC1AD0293800C668A7 = {
 						CreatedOnToolsVersion = 6.2;
-						DevelopmentTeam = 2V65Z4JB29;
+						DevelopmentTeam = E4M5WE7W83;
 						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
@@ -1644,7 +1663,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2V65Z4JB29;
+				DEVELOPMENT_TEAM = E4M5WE7W83;
 				INFOPLIST_FILE = "RxExample/Info-iOS.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1661,7 +1680,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2V65Z4JB29;
+				DEVELOPMENT_TEAM = E4M5WE7W83;
 				INFOPLIST_FILE = "RxExample/Info-iOS.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1875,7 +1894,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2V65Z4JB29;
+				DEVELOPMENT_TEAM = E4M5WE7W83;
 				INFOPLIST_FILE = "RxExample/Info-iOS.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
